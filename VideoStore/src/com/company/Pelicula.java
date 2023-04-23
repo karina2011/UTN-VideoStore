@@ -39,6 +39,10 @@ public class Pelicula {
         return vecesAlquilada;
     }
 
+    public Audiencia getClasificacion() {
+        return clasificacion;
+    }
+
     public void setFechaLanzamiento(LocalDate fechaLanzamiento) {
         this.fechaLanzamiento = fechaLanzamiento;
     }

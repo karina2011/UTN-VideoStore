@@ -12,6 +12,7 @@ public class Main {
         // creamos peliculas
         Pelicula pelicula = new Pelicula("Nintendo","2,5","accion","linda",1, Audiencia.NC17);
         videoStore.getPeliculas().add(pelicula);
+        System.out.println("Audiencia de una pelicula " + pelicula.getClasificacion().getAudiencia());
         pelicula = new Pelicula("Luca","2,5","infantil","linda",3, Audiencia.G);
         videoStore.getPeliculas().add(pelicula);
         pelicula = new Pelicula("Red","2,5","infantil","linda",3,Audiencia.G);
@@ -55,6 +56,8 @@ public class Main {
         System.out.println("HISTORIAL DE ALQUILER ordenada por veces alquilada por genero " + videoStore.alquileresOrdenadosPorVecesAlquiladas("infantil"));
 
         System.out.println("HISTORIAL DE ALQUILER por cliente " + videoStore.alquileresPorCliente("50457524"));
+
+
 
     }
 }
