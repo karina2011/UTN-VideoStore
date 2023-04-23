@@ -10,13 +10,13 @@ public class Main {
 
 
         // creamos peliculas
-        Pelicula pelicula = new Pelicula("Nintendo","2,5","accion","linda",1);
+        Pelicula pelicula = new Pelicula("Nintendo","2,5","accion","linda",1, Audiencia.NC17);
         videoStore.getPeliculas().add(pelicula);
-        pelicula = new Pelicula("Luca","2,5","infantil","linda",3);
+        pelicula = new Pelicula("Luca","2,5","infantil","linda",3, Audiencia.G);
         videoStore.getPeliculas().add(pelicula);
-        pelicula = new Pelicula("Red","2,5","infantil","linda",3);
+        pelicula = new Pelicula("Red","2,5","infantil","linda",3,Audiencia.G);
         videoStore.getPeliculas().add(pelicula);
-        pelicula = new Pelicula("Gato con botas","2,5","infantil","linda",3);
+        pelicula = new Pelicula("Gato con botas","2,5","infantil","linda",3, Audiencia.G);
         videoStore.getPeliculas().add(pelicula);
 
 	   // creamos clientes

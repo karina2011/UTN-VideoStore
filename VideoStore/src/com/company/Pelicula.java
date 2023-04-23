@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Pelicula {
     private String titulo;
     private LocalDate fechaLanzamiento;
-    private String clasificacion;
+    private Audiencia clasificacion;
     private String duracion;
     private String paisOrigen;
     private String genero;
@@ -13,13 +13,14 @@ public class Pelicula {
     private int stock;
     private Integer vecesAlquilada;
 
-    public Pelicula(String titulo, String duracion, String genero, String descripcion, int stock) {
+    public Pelicula(String titulo, String duracion, String genero, String descripcion, int stock, Audiencia clasificacion) {
         this.titulo = titulo;
         this.duracion = duracion;
         this.genero = genero;
         this.descripcion = descripcion;
         this.stock = stock;
         this.vecesAlquilada = 0;
+        this.clasificacion = clasificacion;
     }
 
     public String getTitulo() {
@@ -42,7 +43,7 @@ public class Pelicula {
         this.fechaLanzamiento = fechaLanzamiento;
     }
 
-    public void setClasificacion(String clasificacion) {
+    public void setClasificacion(Audiencia clasificacion) {
         this.clasificacion = clasificacion;
     }
 
